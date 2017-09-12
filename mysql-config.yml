@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server: 
+  port: 8888
+
+spring:
+  profiles: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
+    url: jdbc:mysql://localhost:3306/test           # 数据库连接地址
+    #username: root                                  # 数据库用户名
+    #password: '{cipher}a2722e75244753f656aa9776e5af8a4e94452046fe68087b798a1500fee9bdca'
+    username: '{cipher}06f3f31c73ffeed0d945e689e710ac4b4feb3fb6853f8379413ba853121e8de0fb1b5b1600136fe5c9db9681e91eb9e6'
+    password: '{cipher}ebf0f87917d3b680b357f0bf2db43ac8ab898aa95b5d87e9fea37fd66234b35a'
+    dbcp2:                                          # 进行数据库连接池的配置
+      min-idle: 5                                   # 数据库连接池的最小维持连接数    
+      initial-size: 5                               # 初始化提供的连接数
+      max-total: 5                                  # 最大的连接数
+      max-wait-millis: 200                          # 等待连接获取的最大超时时间
+  application:
+    name: microcloud-config-dept-client
+
