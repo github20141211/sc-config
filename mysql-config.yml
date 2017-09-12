@@ -3,24 +3,13 @@ spring:
     active:
     - dev
 ---
-server: 
-  port: 8888
-
 spring:
   profiles: dev
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
-    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
-    url: jdbc:mysql://localhost:3306/test           # 数据库连接地址
-    #username: root                                  # 数据库用户名
-    #password: '{cipher}a2722e75244753f656aa9776e5af8a4e94452046fe68087b798a1500fee9bdca'
+    url: jdbc:mysql://localhost:3306/test        
+    #原文 luochengroot    
     username: '{cipher}5320cc1c35cd237a2849869e645456c6aa356ef27e7f2bd80f6ac44963e56a14'
+    #原文luocheng123456
     password: '{cipher}b31ca28eb5239127acc77da44db6dc1fe9917b5dcc4f499042c4e17518a49591'
-    dbcp2:                                          # 进行数据库连接池的配置
-      min-idle: 5                                   # 数据库连接池的最小维持连接数    
-      initial-size: 5                               # 初始化提供的连接数
-      max-total: 5                                  # 最大的连接数
-      max-wait-millis: 200                          # 等待连接获取的最大超时时间
-  application:
-    name: mysql-config
+    
 ---
