@@ -3,9 +3,9 @@
 #    active:
 #    - dev
 #---
-spring:
-  profiles: dev
-  datasource:
+#spring:
+#  profiles: dev
+#  datasource:
     url: jdbc:mysql://localhost:3306/test        
     #原文 luochengroot    
     username: '{cipher}5320cc1c35cd237a2849869e645456c6aa356ef27e7f2bd80f6ac44963e56a14'
