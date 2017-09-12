@@ -22,5 +22,5 @@ spring:
       max-total: 5                                  # 最大的连接数
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
   application:
-    name: microcloud-config-dept-client
+    name: mysql-config
 
