@@ -1,8 +1,8 @@
-spring:
-  profiles:
-    active:
-    - dev
----
+#spring:
+#  profiles:
+#    active:
+#    - dev
+#---
 spring:
   profiles: dev
   datasource:
@@ -12,4 +12,4 @@ spring:
     #原文luocheng123456
     password: '{cipher}b31ca28eb5239127acc77da44db6dc1fe9917b5dcc4f499042c4e17518a49591'
     
----
+#---
